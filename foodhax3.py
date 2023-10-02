@@ -26,7 +26,10 @@ for line in fhand:
 #    print(dish.name, dish.wine)
 
 print('There are {} dishes to choose from.\n'.format(cnt))
-
+# TODO: 1. Finish this part (any day start and end) 2. Make week arrays less stupid (just use  one and add food info to each day) 3. Outsource printing of week schedule
+# to separate function so it can be called at any time while picking out the food 4. (Stretch) option to edit the existing dishes while still in the loop
+start = input('What day to start from? (mon, tue, wed, thu, fri, sat, sun - default Tuesday)')
+end = input('What day to end at? (mon, tue, wed, thu, fri, sat, sun - default Monday)')
 if 'Friday' not in days:
     fr = input('Pizzas on Friday as usual?\n\'Y\' for yes or anything else for no.\n')
     if fr.lower() == 'y':
