@@ -114,7 +114,7 @@ for day in days:
                     day.dish = dish
                     #for x in dish.ings:
                         #ingrs[x] = ingrs.get(x, 0) + 1
-                    if not 'Other' in dish.name:
+                    if not 'Other' in dish.name and not 'Vegan'in dish.name:
                         dishes.remove(dish)
         except:
             print('That doesn\'t seem to be a valid number.')
